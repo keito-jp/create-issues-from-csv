@@ -20,19 +20,19 @@ parsed.forEach(element => {
     "body": `
 # WHAT
 
-${element["what"]}
+${element["what"] || ""}
 
 # WHY
 
-${element["why"]}
+${element["why"] || ""}
 
 # HOW
 
-${element["how"]}
+${element["how"] || ""}
 
 # Conditions for Approval
 
-${element["conditions-for-approval"]}
+${element["conditions-for-approval"] || ""}
     `,
     "labels": [element.label]
   }, (err, body, status) => {
